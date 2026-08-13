@@ -32,7 +32,7 @@ const GlobalContext = createContext<GlobalContextType>({
 export function GlobalContextProvider({ children }: { children: ReactNode }) {
   const [isLoggedIn, setLoggedIn] = useState<boolean | null>(null);
   const [isGlobalLoading, setGlobalLoading] = useState<boolean>(true);
-  const [isPLseason, setPLseason] = useState<boolean>(false);
+  const [isPLseason, setPLseason] = useState<boolean>(true);
   const [isAdmin, setAdmin] = useState<boolean>(false);
 
   useEffect(() => {
